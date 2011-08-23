@@ -9,8 +9,10 @@ public abstract class Oblivous implements Runnable
 	//initialize game
 	public Oblivous(boolean fullscreen, boolean showInitializeScreen, int wPixels, int hPixels) 
 	{
-		System.out.println("Look at what the hell i can do");
+		
 	}
-	
-	
+
 }
+	
+	
+

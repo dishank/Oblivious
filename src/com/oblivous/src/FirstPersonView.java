@@ -1,6 +1,6 @@
 package com.oblivous.src;
 
-public class FirstPersonView
+public class FirstPersonView extends Menu
 {
 
 }

@@ -1,6 +1,6 @@
 package com.oblivous.src;
 
-public abstract class MapView
+public class MapView extends Menu
 {
-
+  
 }
