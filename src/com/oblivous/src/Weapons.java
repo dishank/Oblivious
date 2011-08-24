@@ -13,5 +13,4 @@ public abstract class Weapons
 	public abstract void firingAnimation();
 	public abstract void damage();
 
-
 }
