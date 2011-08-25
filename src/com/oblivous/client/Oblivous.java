@@ -2,18 +2,9 @@ package com.oblivous.client;
 
 import com.jme3.app.SimpleApplication;
 import com.jme3.input.controls.ActionListener;
-import com.jme3.material.Material;
-import com.jme3.renderer.Camera;
-import com.jme3.terrain.geomipmap.TerrainLodControl;
-import com.jme3.terrain.heightmap.AbstractHeightMap;
-import com.jme3.terrain.geomipmap.TerrainQuad;
-import com.jme3.terrain.heightmap.HillHeightMap; // is used in example 2
-import com.jme3.terrain.heightmap.ImageBasedHeightMap;
-import com.jme3.texture.Texture;
-import com.jme3.texture.Texture.WrapMode;
-import java.util.ArrayList;
-import java.util.List;
-import jme3tools.converters.ImageToAwt;
+import com.jme3.scene.Spatial;
+import com.jme3.system.AppSettings;
+import com.oblivous.test.TestCube;
 
 /**
  * 
@@ -22,14 +13,33 @@ import jme3tools.converters.ImageToAwt;
  */
 public class Oblivous extends SimpleApplication implements Runnable, ActionListener
 {
+	
+	
 	public static void main(String[] args)
 	{
+		//change what needs to start over here
+		TestCube app = new TestCube();
 		
+        AppSettings gameSettings = null;
+        gameSettings = new AppSettings(false);
+        gameSettings.setResolution(1280, 720);
+        gameSettings.setFullscreen(true);
+        gameSettings.setVSync(true);
+        gameSettings.setTitle("Oblivous");
+        gameSettings.setUseInput(true);
+        gameSettings.setFrameRate(500);
+        gameSettings.setSamples(0);
+        gameSettings.setRenderer("LWJGL-OpenGL2");
+        app.setSettings(gameSettings);
+    app.setShowSettings(false);
+    app.start();
 	}
 	
 	//Constructors
 	public Oblivous(boolean fullscreen, boolean showInitializeScreen, int wPixels, int hPixels) 
 	{
+
+		
 		
 	}
 	
@@ -55,7 +65,10 @@ public class Oblivous extends SimpleApplication implements Runnable, ActionListe
 	}
 	@Override
 	public void simpleInitApp() {
+		
 		// TODO Auto-generated method stub
+		
+
 		
 	}
 
