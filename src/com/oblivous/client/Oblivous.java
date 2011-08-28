@@ -63,14 +63,13 @@ public class Oblivous extends SimpleApplication implements Runnable, ActionListe
 		// TODO Auto-generated method stub
 		
 	}
+
 	@Override
 	public void simpleInitApp() {
-		
 		// TODO Auto-generated method stub
 		
-
-		
 	}
+
 
 }
 	

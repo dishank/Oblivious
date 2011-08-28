@@ -24,12 +24,12 @@ public class TestCube extends SimpleApplication {
 		statsView.setCullHint(Spatial.CullHint.Always);
 		fpsText.setCullHint(Spatial.CullHint.Always);
 		
-	  flyCam.setMoveSpeed(60);
+	  flyCam.setMoveSpeed(20);
     /** A simple textured cube -- in good MIP map quality. */
     Box boxshape1 = new Box(new Vector3f(-3f,1.1f,0f), 1f,1f,1f);
     Geometry cube = new Geometry("My Textured Box", boxshape1);
     Material mat_stl = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
-    Texture tex_ml = assetManager.loadTexture("res/walls.png");
+    Texture tex_ml = assetManager.loadTexture("res/Stone.jpg");
     mat_stl.setTexture("ColorMap", tex_ml);
     cube.setMaterial(mat_stl);
     rootNode.attachChild(cube);
@@ -73,4 +73,3 @@ public class TestCube extends SimpleApplication {
     rootNode.addLight(sun);
   }
 }
-
